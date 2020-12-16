@@ -2,35 +2,35 @@
   "warnings": [
     {
       "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Calendar/Classes/BPKCalendarCell.h",
-      "line": 20,
+      "line": 21,
       "symbol": "SelectionType",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Calendar/Classes/BPKCalendarCell.h",
-      "line": 20,
+      "line": 21,
       "symbol": "SelectionType",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Calendar/Classes/BPKCalendarCell.h",
-      "line": 29,
+      "line": 30,
       "symbol": "RowType",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Calendar/Classes/BPKCalendarCell.h",
-      "line": 29,
+      "line": 30,
       "symbol": "RowType",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Calendar/Classes/BPKCalendarCell.h",
-      "line": 31,
+      "line": 32,
       "symbol": "BPKCalendarCell",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
@@ -39,6 +39,13 @@
       "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Calendar/Classes/BPKCalendarHeaderCell.h",
       "line": 23,
       "symbol": "BPKCalendarHeaderCell",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Calendar/Classes/BPKCalendarPriceLabelConfiguration.h",
+      "line": 23,
+      "symbol": "BPKCalendarPriceLabelConfiguration",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },

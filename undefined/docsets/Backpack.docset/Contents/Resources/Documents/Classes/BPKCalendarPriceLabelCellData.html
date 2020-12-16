@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>BPKCalendarTrafficLightCellData Class Reference</title>
+    <title>BPKCalendarPriceLabelCellData Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/objc/Class/BPKCalendarTrafficLightCellData" class="dashAnchor"></a>
-    <a title="BPKCalendarTrafficLightCellData Class Reference"></a>
+    <a name="//apple_ref/objc/Class/BPKCalendarPriceLabelCellData" class="dashAnchor"></a>
+    <a title="BPKCalendarPriceLabelCellData Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">Backpack 39.0.0 Docs</a> (84% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">Backpack Reference</a>
         <img id="carat" src="../img/carat.png" />
-        BPKCalendarTrafficLightCellData Class Reference
+        BPKCalendarPriceLabelCellData Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -386,15 +386,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>BPKCalendarTrafficLightCellData</h1>
+            <h1>BPKCalendarPriceLabelCellData</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BPKCalendarTrafficLightCellData</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BPKCalendarPriceLabelCellData</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p><code>BPKCalendarTrafficLightCellData</code> contains the properties required to customise a calendar cell under a traffic-light
-system to colour cells according to data.</p>
+            <p><code>BPKCalendarPriceLabelCellData</code> contains the properties required to show a price label under a calendar cell.</p>
 
           </section>
           <section class="section task-group-section">
@@ -403,9 +402,9 @@ system to colour cells according to data.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)BPKCalendarTrafficLightCellData(cpy)normal"></a>
-                    <a name="//apple_ref/objc/Property/normal" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BPKCalendarTrafficLightCellData(cpy)normal">normal</a>
+                    <a name="/c:objc(cs)BPKCalendarPriceLabelCellData(im)initWithPrice:labelStyle:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithPrice:labelStyle:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BPKCalendarPriceLabelCellData(im)initWithPrice:labelStyle:">-initWithPrice:<wbr>labelStyle:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -413,19 +412,84 @@ system to colour cells according to data.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The cell-data representing a normal calendar cell under the traffic-light scheme.</p>
+                        <p>Create an instance of <code>BPKCalendarPriceLabelCellData</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">class</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BPKCalendarTrafficLightCellData</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">normal</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithPrice</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">price</span>
+                           <span class="nf">labelStyle</span><span class="p">:</span>
+                               <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/BPKCalendarPriceLabelStyle.html">BPKCalendarPriceLabelStyle</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">labelStyle</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">normal</span><span class="p">:</span> <span class="kt">BPKCalendarTrafficLightCellData</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">price</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="nv">labelStyle</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>price</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the price to show at the bottom of the cell.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>labelStyle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The style to be applied to the text at the bottom of the cell.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BPKCalendarPriceLabelCellData(py)price"></a>
+                    <a name="//apple_ref/objc/Property/price" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BPKCalendarPriceLabelCellData(py)price">price</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The price value to be shown below the cell.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">price</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">price</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="kt">Int32</span><span class="o">&gt;!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -435,9 +499,9 @@ system to colour cells according to data.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)BPKCalendarTrafficLightCellData(cpy)positive"></a>
-                    <a name="//apple_ref/objc/Property/positive" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BPKCalendarTrafficLightCellData(cpy)positive">positive</a>
+                    <a name="/c:objc(cs)BPKCalendarPriceLabelCellData(py)labelStyle"></a>
+                    <a name="//apple_ref/objc/Property/labelStyle" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BPKCalendarPriceLabelCellData(py)labelStyle">labelStyle</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -445,179 +509,19 @@ system to colour cells according to data.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The cell-data representing a positive calendar cell under the traffic-light scheme.</p>
+                        <p>The style to apply to the price label.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">class</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BPKCalendarTrafficLightCellData</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">positive</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/BPKCalendarPriceLabelStyle.html">BPKCalendarPriceLabelStyle</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">labelStyle</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">positive</span><span class="p">:</span> <span class="kt">BPKCalendarTrafficLightCellData</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)BPKCalendarTrafficLightCellData(cpy)negative"></a>
-                    <a name="//apple_ref/objc/Property/negative" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BPKCalendarTrafficLightCellData(cpy)negative">negative</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The cell-data representing a negative calendar cell under the traffic-light scheme.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">class</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BPKCalendarTrafficLightCellData</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">negative</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">negative</span><span class="p">:</span> <span class="kt">BPKCalendarTrafficLightCellData</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)BPKCalendarTrafficLightCellData(cpy)noData"></a>
-                    <a name="//apple_ref/objc/Property/noData" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BPKCalendarTrafficLightCellData(cpy)noData">noData</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The cell-data representing a calendar cell with no data under the traffic-light scheme.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">class</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NS_SWIFT_NAME</span><span class="p">(</span><span class="n">noData</span><span class="p">)</span> <span class="n">BPKCalendarTrafficLightCellData</span> <span class="o">*</span><span class="n">noData</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">no</span><span class="p">:</span> <span class="kt">BPKCalendarTrafficLightCellData</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)BPKCalendarTrafficLightCellData(cpy)neutral"></a>
-                    <a name="//apple_ref/objc/Property/neutral" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BPKCalendarTrafficLightCellData(cpy)neutral">neutral</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The cell-data representing a neutral calendar cell under the traffic-light scheme.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">class</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BPKCalendarTrafficLightCellData</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">neutral</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">neutral</span><span class="p">:</span> <span class="kt">BPKCalendarTrafficLightCellData</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)BPKCalendarTrafficLightCellData(py)backgroundColor"></a>
-                    <a name="//apple_ref/objc/Property/backgroundColor" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BPKCalendarTrafficLightCellData(py)backgroundColor">backgroundColor</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The background colour to use on the cell.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">UIColor</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">backgroundColor</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">backgroundColor</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="kt">Int32</span><span class="o">&gt;!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)BPKCalendarTrafficLightCellData(py)foregroundColor"></a>
-                    <a name="//apple_ref/objc/Property/foregroundColor" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BPKCalendarTrafficLightCellData(py)foregroundColor">foregroundColor</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The foreground colour to use on the cell.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">UIColor</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">foregroundColor</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">foregroundColor</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="kt">Int32</span><span class="o">&gt;!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">labelStyle</span><span class="p">:</span> <span class="kt">BPKCalendarPriceLabelCellData</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
