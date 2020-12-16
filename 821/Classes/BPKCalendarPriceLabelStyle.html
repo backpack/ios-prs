@@ -403,9 +403,9 @@ system to colour cells according to data.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)BPKCalendarPriceLabelStyle(im)initWithColor:bold:"></a>
-                    <a name="//apple_ref/objc/Method/-initWithColor:bold:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BPKCalendarPriceLabelStyle(im)initWithColor:bold:">-initWithColor:<wbr>bold:<wbr></a>
+                    <a name="/c:objc(cs)BPKCalendarPriceLabelStyle(im)initWithTextColor:bold:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithTextColor:bold:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BPKCalendarPriceLabelStyle(im)initWithTextColor:bold:">-initWithTextColor:<wbr>bold:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -420,12 +420,13 @@ system to colour cells according to data.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithColor</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIColor</span> <span class="o">*</span><span class="p">)</span><span class="nv">color</span> <span class="nf">bold</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">bold</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithTextColor</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIColor</span> <span class="o">*</span><span class="p">)</span><span class="nv">textColor</span>
+                                     <span class="nf">bold</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">bold</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">color</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="nv">bold</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">textColor</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="nv">bold</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -436,7 +437,7 @@ system to colour cells according to data.</p>
                             <tr>
                               <td>
                                 <code>
-                                <em>color</em>
+                                <em>textColor</em>
                                 </code>
                               </td>
                               <td>
@@ -470,9 +471,9 @@ system to colour cells according to data.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)BPKCalendarPriceLabelStyle(py)color"></a>
-                    <a name="//apple_ref/objc/Property/color" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BPKCalendarPriceLabelStyle(py)color">color</a>
+                    <a name="/c:objc(cs)BPKCalendarPriceLabelStyle(py)textColor"></a>
+                    <a name="//apple_ref/objc/Property/textColor" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BPKCalendarPriceLabelStyle(py)textColor">textColor</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -487,12 +488,12 @@ system to colour cells according to data.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">UIColor</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">color</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">UIColor</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">textColor</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="kt">Int32</span><span class="o">&gt;!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">textColor</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="kt">Int32</span><span class="o">&gt;!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
