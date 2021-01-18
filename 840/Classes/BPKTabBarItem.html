@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>BPKGradientView Class Reference</title>
+    <title>BPKTabBarItem Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/objc/Class/BPKGradientView" class="dashAnchor"></a>
-    <a title="BPKGradientView Class Reference"></a>
+    <a name="//apple_ref/objc/Class/BPKTabBarItem" class="dashAnchor"></a>
+    <a title="BPKTabBarItem Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">Backpack 40.0.2 Docs</a> (84% documented)</p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">Backpack Reference</a>
         <img id="carat" src="../img/carat.png" />
-        BPKGradientView Class Reference
+        BPKTabBarItem Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -400,25 +400,20 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>BPKGradientView</h1>
+            <h1>BPKTabBarItem</h1>
               <div class="declaration">
                 <div class="language">
                   <p class="aside-title">Objective-C</p>
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BPKGradientView</span> <span class="p">:</span> <span class="nc">UIView</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BPKTabBarItem</span> <span class="p">:</span> <span class="nc">UITabBarItem</span></code></pre>
 
                 </div>
                 <div class="language">
                   <p class="aside-title">Swift</p>
-                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BPKGradientView</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BPKTabBarItem</span> <span class="p">:</span> <span class="kt">UITabBarItem</span></code></pre>
 
                 </div>
               </div>
-            <p>This class is a <code>UIView</code> subclass for correctly drawing non-square gradients.
- It&rsquo;s backed by a layer that does the actual drawing, but using this view directly
- is preferred.</p>
-
-<p>Changing the bounds or updating the gradient property causes this view to redraw
- on the next display pass.</p>
+            <p><code>BPKTabBarItem</code> is a subclass of <code>UITabBarItem</code> configured with Skyscanner style properties.</p>
 
           </section>
           <section class="section task-group-section">
@@ -427,9 +422,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)BPKGradientView(py)gradient"></a>
-                    <a name="//apple_ref/objc/Property/gradient" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BPKGradientView(py)gradient">gradient</a>
+                    <a name="/c:objc(cs)BPKTabBarItem(py)originalImage"></a>
+                    <a name="//apple_ref/objc/Property/originalImage" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BPKTabBarItem(py)originalImage">originalImage</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -437,20 +432,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The gradient currently being drawn. Setting this will cause the view to redraw
-with the new gradient.</p>
+                        <p>The base image to use when a dot is not shown</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n"><a href="../Classes/BPKGradient.html">BPKGradient</a></span> <span class="o">*</span><span class="n">gradient</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">UIImage</span> <span class="o">*</span><span class="n">originalImage</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">gradient</span><span class="p">:</span> <span class="kt"><a href="../Classes/BPKGradient.html">BPKGradient</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">originalImage</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -460,9 +454,9 @@ with the new gradient.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)BPKGradientView(im)initWithGradient:"></a>
-                    <a name="//apple_ref/objc/Method/-initWithGradient:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)BPKGradientView(im)initWithGradient:">-initWithGradient:<wbr></a>
+                    <a name="/c:objc(cs)BPKTabBarItem(py)dotImageDefinition"></a>
+                    <a name="//apple_ref/objc/Property/dotImageDefinition" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BPKTabBarItem(py)dotImageDefinition">dotImageDefinition</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -470,19 +464,152 @@ with the new gradient.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Create a gradient view with the specified <code><a href="../Classes/BPKGradient.html">BPKGradient</a></code>.</p>
+                        <p>The images to show when a dot is applied.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithGradient</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/BPKGradient.html">BPKGradient</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">gradient</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">strong</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n"><a href="../Classes.html#/c:objc(cs)BPKTabBarDotImageDefinition">BPKTabBarDotImageDefinition</a></span> <span class="o">*</span><span class="n">dotImageDefinition</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">gradient</span><span class="p">:</span> <span class="kt"><a href="../Classes/BPKGradient.html">BPKGradient</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">dotImageDefinition</span><span class="p">:</span> <span class="kt"><a href="../Classes.html#/c:objc(cs)BPKTabBarDotImageDefinition">BPKTabBarDotImageDefinition</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BPKTabBarItem(py)interfaceStyle"></a>
+                    <a name="//apple_ref/objc/Property/interfaceStyle" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BPKTabBarItem(py)interfaceStyle">interfaceStyle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The interface style to be used in determining which dot image to use.
+Has no effect when a dot is not shown.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">UIUserInterfaceStyle</span> <span class="n">interfaceStyle</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">interfaceStyle</span><span class="p">:</span> <span class="kt">UIUserInterfaceStyle</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BPKTabBarItem(py)dotShown"></a>
+                    <a name="//apple_ref/objc/Property/dotShown" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BPKTabBarItem(py)dotShown">dotShown</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the dot should be shown on the tab bar item or not.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">BOOL</span> <span class="n">dotShown</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">dotShown</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BPKTabBarItem(py)selected"></a>
+                    <a name="//apple_ref/objc/Property/selected" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BPKTabBarItem(py)selected">selected</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the tab bar item is selected or not</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">selected</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">selected</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BPKTabBarItem(im)initWithTitle:image:tag:dotImageDefinition:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithTitle:image:tag:dotImageDefinition:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BPKTabBarItem(im)initWithTitle:image:tag:dotImageDefinition:">-initWithTitle:<wbr>image:<wbr>tag:<wbr>dotImageDefinition:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code>BPKTabBarItem</code>..</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithTitle</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">title</span>
+                                <span class="nf">image</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nv">image</span>
+                                  <span class="nf">tag</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">tag</span>
+                   <span class="nf">dotImageDefinition</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes.html#/c:objc(cs)BPKTabBarDotImageDefinition">BPKTabBarDotImageDefinition</a></span> <span class="o">*</span><span class="p">)</span>
+                                          <span class="n"><a href="../Classes/BPKTabBarItem.html#/c:objc(cs)BPKTabBarItem(py)dotImageDefinition">dotImageDefinition</a></span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">,</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">dotImageDefinition</span><span class="p">:</span> <span class="kt"><a href="../Classes.html#/c:objc(cs)BPKTabBarDotImageDefinition">BPKTabBarDotImageDefinition</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -493,17 +620,121 @@ with the new gradient.</p>
                             <tr>
                               <td>
                                 <code>
-                                <em>gradient</em>
+                                <em>title</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The gradient to use for drawing the view.</p>
+                                  <p>The title to show in the tab bar item.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>image</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The image to show in the tab bar item when there is no dot.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The tag to assign to the tab bar item.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dotImageDefinition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The images to show in the tab bar item when a dot is shown.</p>
                                 </div>
                               </td>
                             </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>BPKTabBarItem</code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BPKTabBarItem(im)addDot"></a>
+                    <a name="//apple_ref/objc/Method/-addDot" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BPKTabBarItem(im)addDot">-addDot</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Apply the dot by using the dotImageDefinition images</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">addDot</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addDot</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BPKTabBarItem(im)removeDot"></a>
+                    <a name="//apple_ref/objc/Method/-removeDot" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BPKTabBarItem(im)removeDot">-removeDot</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove the dot if currently shown.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">removeDot</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removeDot</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>

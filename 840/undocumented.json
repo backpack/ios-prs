@@ -456,62 +456,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/TabBarController/Classes/BPKTabBarItem.h",
-      "line": 30,
-      "symbol": "BPKTabBarItem.originalImage",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/TabBarController/Classes/BPKTabBarItem.h",
-      "line": 32,
-      "symbol": "BPKTabBarItem.interfaceStyle",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/TabBarController/Classes/BPKTabBarItem.h",
-      "line": 34,
-      "symbol": "BPKTabBarItem.dotImageDefinition",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/TabBarController/Classes/BPKTabBarItem.h",
-      "line": 36,
-      "symbol": "BPKTabBarItem.dotShown",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/TabBarController/Classes/BPKTabBarItem.h",
-      "line": 38,
-      "symbol": "BPKTabBarItem.selected",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/TabBarController/Classes/BPKTabBarItem.h",
-      "line": 40,
-      "symbol": "BPKTabBarItem.-initWithTitle:image:tag:dotImageDefinition:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/TabBarController/Classes/BPKTabBarItem.h",
-      "line": 42,
-      "symbol": "BPKTabBarItem.-addDot",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/TabBarController/Classes/BPKTabBarItem.h",
-      "line": 44,
-      "symbol": "BPKTabBarItem.-removeDot",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/TappableLinkLabel/Classes/BPKTappableLinkLabel.h",
       "line": 49,
       "symbol": "BPKTappableLinkLabel.linkColor",
