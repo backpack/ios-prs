@@ -435,27 +435,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/TabBarController/Classes/BPKTabBarDotImageDefinition.h",
-      "line": 29,
-      "symbol": "BPKTabBarDotImageDefinition.lightImage",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/TabBarController/Classes/BPKTabBarDotImageDefinition.h",
-      "line": 30,
-      "symbol": "BPKTabBarDotImageDefinition.darkImage",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/TabBarController/Classes/BPKTabBarDotImageDefinition.h",
-      "line": 32,
-      "symbol": "BPKTabBarDotImageDefinition.-initWithLightImage:darkImage:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/TappableLinkLabel/Classes/BPKTappableLinkLabel.h",
       "line": 49,
       "symbol": "BPKTappableLinkLabel.linkColor",
