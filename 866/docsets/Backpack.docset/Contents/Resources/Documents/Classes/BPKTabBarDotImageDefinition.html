@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>BPKSnackbarDismissCause Enumeration Reference</title>
+    <title>BPKTabBarDotImageDefinition Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/objc/Enum/BPKSnackbarDismissCause" class="dashAnchor"></a>
-    <a title="BPKSnackbarDismissCause Enumeration Reference"></a>
+    <a name="//apple_ref/objc/Class/BPKTabBarDotImageDefinition" class="dashAnchor"></a>
+    <a title="BPKTabBarDotImageDefinition Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">Backpack 40.1.0 Docs</a> (85% documented)</p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">Backpack Reference</a>
         <img id="carat" src="../img/carat.png" />
-        BPKSnackbarDismissCause Enumeration Reference
+        BPKTabBarDotImageDefinition Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -400,15 +400,20 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>BPKSnackbarDismissCause</h1>
+            <h1>BPKTabBarDotImageDefinition</h1>
               <div class="declaration">
                 <div class="language">
-                  
-                  <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">BPKSnackbarDismissCause</span> <span class="p">{}</span></code></pre>
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">BPKTabBarDotImageDefinition</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BPKTabBarDotImageDefinition</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>Cause for a snackbar being dismissed.</p>
+            <p><code>BPKTabBarDotImageDefinition</code> contains a pair of UIImages to use in light mode and dark mode respectively.</p>
 
           </section>
           <section class="section task-group-section">
@@ -417,9 +422,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@BPKSnackbarDismissCause@BPKSnackbarDismissCauseNone"></a>
-                    <a name="//apple_ref/objc/Case/BPKSnackbarDismissCauseNone" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@BPKSnackbarDismissCause@BPKSnackbarDismissCauseNone">BPKSnackbarDismissCauseNone</a>
+                    <a name="/c:objc(cs)BPKTabBarDotImageDefinition(py)lightImage"></a>
+                    <a name="//apple_ref/objc/Property/lightImage" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BPKTabBarDotImageDefinition(py)lightImage">lightImage</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -427,14 +432,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The snackbar was dismissed using <code>dismiss</code> method on the snackbar.</p>
+                        <p>The dot image to display in light mode.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">BPKSnackbarDismissCauseNone</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">UIImage</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">lightImage</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">lightImage</span><span class="p">:</span> <span class="kt">UIImage</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -444,9 +454,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@BPKSnackbarDismissCause@BPKSnackbarDismissCauseActionButton"></a>
-                    <a name="//apple_ref/objc/Case/BPKSnackbarDismissCauseActionButton" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@BPKSnackbarDismissCause@BPKSnackbarDismissCauseActionButton">BPKSnackbarDismissCauseActionButton</a>
+                    <a name="/c:objc(cs)BPKTabBarDotImageDefinition(py)darkImage"></a>
+                    <a name="//apple_ref/objc/Property/darkImage" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BPKTabBarDotImageDefinition(py)darkImage">darkImage</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -454,14 +464,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The user tapped the action button in the snackbar.</p>
+                        <p>The dot image to display in dark mode.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">BPKSnackbarDismissCauseActionButton</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">UIImage</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">darkImage</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">darkImage</span><span class="p">:</span> <span class="kt">UIImage</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -471,9 +486,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@BPKSnackbarDismissCause@BPKSnackbarDismissCauseDuration"></a>
-                    <a name="//apple_ref/objc/Case/BPKSnackbarDismissCauseDuration" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@BPKSnackbarDismissCause@BPKSnackbarDismissCauseDuration">BPKSnackbarDismissCauseDuration</a>
+                    <a name="/c:objc(cs)BPKTabBarDotImageDefinition(im)initWithLightImage:darkImage:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithLightImage:darkImage:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BPKTabBarDotImageDefinition(im)initWithLightImage:darkImage:">-initWithLightImage:<wbr>darkImage:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -481,16 +496,57 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The snackbar was displayed for the full duration and then dismissed automatically.</p>
+                        <p>Create a <code>BPKTabBarDotImageDefinition</code>.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">BPKSnackbarDismissCauseDuration</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithLightImage</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nv">lightImage</span>
+                                 <span class="nf">darkImage</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nv">darkImage</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">lightImage</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">,</span> <span class="nv">darkImage</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lightImage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The dot image to display in light mode.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>darkImage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The dot image to display in dark mode.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>BPKTabBarDotImageDefinition</code> instance.</p>
                       </div>
                     </section>
                   </div>

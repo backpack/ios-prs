@@ -435,13 +435,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/TabBarController/Classes/UITabBarItem+Backpack.h",
-      "line": 21,
-      "symbol": "UITabBarItem(Backpack)",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/TappableLinkLabel/Classes/BPKTappableLinkLabel.h",
       "line": 49,
       "symbol": "BPKTappableLinkLabel.linkColor",
