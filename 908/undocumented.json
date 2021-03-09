@@ -51,7 +51,7 @@
     },
     {
       "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Calendar/Classes/BPKCalendarSelectionConfiguration.h",
-      "line": 21,
+      "line": 24,
       "symbol": "BPKCalendarSelectionConfiguration",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
