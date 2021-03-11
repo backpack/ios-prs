@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>BPKDialogControllerStyle Enumeration Reference</title>
+    <title>BPKCalendarSelectionStyle Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/objc/Enum/BPKDialogControllerStyle" class="dashAnchor"></a>
-    <a title="BPKDialogControllerStyle Enumeration Reference"></a>
+    <a name="//apple_ref/objc/Enum/BPKCalendarSelectionStyle" class="dashAnchor"></a>
+    <a title="BPKCalendarSelectionStyle Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">Backpack 40.7.0 Docs</a> (84% documented)</p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">Backpack Reference</a>
         <img id="carat" src="../img/carat.png" />
-        BPKDialogControllerStyle Enumeration Reference
+        BPKCalendarSelectionStyle Enumeration Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -409,20 +409,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>BPKDialogControllerStyle</h1>
+            <h1>BPKCalendarSelectionStyle</h1>
               <div class="declaration">
                 <div class="language">
-                  <p class="aside-title">Objective-C</p>
-                  <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">BPKDialogControllerStyle</span> <span class="p">{}</span></code></pre>
-
-                </div>
-                <div class="language">
-                  <p class="aside-title">Swift</p>
-                  <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">BPKDialogControllerStyle</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+                  
+                  <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">BPKCalendarSelectionStyle</span> <span class="p">{}</span></code></pre>
 
                 </div>
               </div>
-            <p>The different styles of the Dialog.</p>
+            <p>Enum values for specifying calendar selection style</p>
 
           </section>
           <section class="section task-group-section">
@@ -431,9 +426,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@BPKDialogControllerStyle@BPKDialogControllerStyleBottomSheet"></a>
-                    <a name="//apple_ref/objc/Case/BPKDialogControllerStyleBottomSheet" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@BPKDialogControllerStyle@BPKDialogControllerStyleBottomSheet">BPKDialogControllerStyleBottomSheet</a>
+                    <a name="/c:@E@BPKCalendarSelectionStyle@BPKCalendarSelectionStyleSingle"></a>
+                    <a name="//apple_ref/objc/Case/BPKCalendarSelectionStyleSingle" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@BPKCalendarSelectionStyle@BPKCalendarSelectionStyleSingle">BPKCalendarSelectionStyleSingle</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -441,21 +436,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A bottom sheet displayed at the bottom of the screen.
-Suitable for confirming potential dangerous actions or
-making choices.</p>
+                        <p>Select a single date in the calendar.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">BPKDialogControllerStyleBottomSheet</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">bottomSheet</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">BPKCalendarSelectionStyleSingle</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
 
                         </div>
                       </div>
@@ -465,9 +453,9 @@ making choices.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@BPKDialogControllerStyle@BPKDialogControllerStyleAlert"></a>
-                    <a name="//apple_ref/objc/Case/BPKDialogControllerStyleAlert" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@BPKDialogControllerStyle@BPKDialogControllerStyleAlert">BPKDialogControllerStyleAlert</a>
+                    <a name="/c:@E@BPKCalendarSelectionStyle@BPKCalendarSelectionStyleRange"></a>
+                    <a name="//apple_ref/objc/Case/BPKCalendarSelectionStyleRange" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@BPKCalendarSelectionStyle@BPKCalendarSelectionStyleRange">BPKCalendarSelectionStyleRange</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -475,20 +463,41 @@ making choices.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>An alert style Dialog displaying its content in
-the middle of the screen.</p>
+                        <p>Select a range in the calendar by selecting a start and then an end date.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">BPKDialogControllerStyleAlert</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">BPKCalendarSelectionStyleRange</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@BPKCalendarSelectionStyle@BPKCalendarSelectionStyleMultiple"></a>
+                    <a name="//apple_ref/objc/Case/BPKCalendarSelectionStyleMultiple" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@BPKCalendarSelectionStyle@BPKCalendarSelectionStyleMultiple">BPKCalendarSelectionStyleMultiple</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Select multiple individual dates.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">alert</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">BPKCalendarSelectionStyleMultiple</span> <span class="o">=</span> <span class="mi">2</span></code></pre>
 
                         </div>
                       </div>
