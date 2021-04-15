@@ -443,7 +443,7 @@
 
                 </div>
               </div>
-            <p>A component for selecting a value by incrementing and decrementing in defined steps.</p>
+            <p>A component for selecting a numerical value by incrementing and decrementing in defined steps.</p>
 
           </section>
           <section class="section task-group-section">
@@ -597,6 +597,58 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)BPKNudger(im)initWithConfiguration:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithConfiguration:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BPKNudger(im)initWithConfiguration:">-initWithConfiguration:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code>BPKNudger</code> with the given configuration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithConfiguration</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">BPKNudgerConfiguration</span> <span class="o">*</span><span class="p">)</span><span class="nv">configuration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">configuration</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>configuration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The configuration that the nudger will use.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)BPKNudger(py)value"></a>
                     <a name="//apple_ref/objc/Property/value" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)BPKNudger(py)value">value</a>
@@ -642,7 +694,8 @@
                         <p>The minimum value the nudger will allow adjusting to.</p>
 
 <p>Must be numerically less than maximumValue. If you attempt to set a value equal to or greater than maximumValue,
- the receive raises an NSInvalidArgumentException exception.</p>
+ the receive raises an NSInvalidArgumentException exception.
+ If you set a maximumValue greater than the current value, the current value will align to the maximumValue.</p>
 
 <p>The default value of this property is 0.</p>
 
@@ -679,7 +732,8 @@
                         <p>The maximum value the nudger will allow adjusting to.</p>
 
 <p>Must be numerically greater than minimumValue. If you attempt to set a value equal to or lower than minimumValue,
- the receiver raises an NSInvalidArgumentException exception.</p>
+ the receiver raises an NSInvalidArgumentException exception.
+ If you set a minimumValue greater than the current value, the current value will align to the minimumValue.</p>
 
 <p>The default value of this property is 100.</p>
 

@@ -218,13 +218,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Nudger/Classes/BPKNudger.h",
-      "line": 40,
-      "symbol": "BPKNudger.-initWithConfiguration:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Nudger/Classes/BPKNudgerConfiguration.h",
       "line": 21,
       "symbol": "BPKNudgerLabelFormatter",
