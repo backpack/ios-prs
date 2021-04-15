@@ -219,30 +219,30 @@
     },
     {
       "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Nudger/Classes/BPKNudger.h",
-      "line": 22,
+      "line": 40,
+      "symbol": "BPKNudger.-initWithConfiguration:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Nudger/Classes/BPKNudgerConfiguration.h",
+      "line": 21,
       "symbol": "BPKNudgerLabelFormatter",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Nudger/Classes/BPKNudger.h",
-      "line": 23,
+      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Nudger/Classes/BPKNudgerConfiguration.h",
+      "line": 22,
       "symbol": "BPKNudgerAccessibilityLabelFormatter",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Nudger/Classes/BPKNudger.h",
-      "line": 25,
+      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Nudger/Classes/BPKNudgerConfiguration.h",
+      "line": 24,
       "symbol": "BPKNudgerConfiguration",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Nudger/Classes/BPKNudger.h",
-      "line": 59,
-      "symbol": "BPKNudger.-initWithConfiguration:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
