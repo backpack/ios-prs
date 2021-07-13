@@ -848,6 +848,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Theme/Classes/UIView+BPKThemeContainer.h",
+      "line": 24,
+      "symbol": "UIView(BPKThemeContainer)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Theme/Classes/UIViewController+BPKThemeContainerController.h",
       "line": 24,
       "symbol": "UIViewController(BPKThemeContainerController)",
