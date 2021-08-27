@@ -323,23 +323,16 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Rating/Classes/BPKRatingStrings.h",
-      "line": 25,
-      "symbol": "BPKRatingStrings",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Rating/Classes/BPKSimpleRatingStrings.h",
+      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Rating/Classes/BPKSimpleRatingStringSet.h",
       "line": 27,
       "symbol": "BPKRatingAccessibilityLabel",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Rating/Classes/BPKSimpleRatingStrings.h",
+      "file": "/Users/runner/work/backpack-ios/backpack-ios/Backpack/Rating/Classes/BPKSimpleRatingStringSet.h",
       "line": 29,
-      "symbol": "BPKSimpleRatingStrings",
+      "symbol": "BPKSimpleRatingStringSet",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
